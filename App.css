@@ -1,0 +1,105 @@
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f06, #b0f);
+  min-height: 100vh;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #3cb371; /* Parrot green color */
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #32cd32; /* Slightly brighter parrot green on hover */
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.task-list li.completed {
+  background-color: #d4ffd4;
+}
+
+.task-list li.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.task-list li input {
+  margin-right: 10px;
+}
+
+.task-list li span {
+  flex: 1;
+  font-size: 16px;
+}
+
+.task-list li button {
+  margin-left: auto;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff4081;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.task-list li button:hover {
+  background-color: #e91e63;
+}
